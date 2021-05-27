@@ -9,14 +9,9 @@ class TestController extends Controller {
 
   public function home() {
 
-    return view("pages.home");
-
-  }
-
-  public function employees() {
-
     $employees = Employee::all();
-    return view('pages.home', compact("employee"));
+    return view("pages.home", compact("employees"));
+
   }
 
 }
