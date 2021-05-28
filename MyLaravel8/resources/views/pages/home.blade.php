@@ -11,6 +11,12 @@
           <li>
             <span>{{ $employee -> firstname }}</span>
             <span>{{ $employee -> lastname }}</span>
+            <a href="{{ route('deleteEmployee', $employee -> id) }}">
+              <i class="far fa-trash-alt"></i>
+            </a>
+            <a href="{{ route('editEmployee', $employee -> id) }}">
+              <i class="fas fa-pencil-alt"></i>
+            </a>
           </li>
         @endforeach
       </ul>

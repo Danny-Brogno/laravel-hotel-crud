@@ -8,4 +8,12 @@ class Employee extends Model {
 
   // public $table = "employees";
 
+  protected $fillable = [
+    'firstname',
+    'lastname',
+    'role',
+    'ral'
+  ];
+
+
 }

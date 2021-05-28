@@ -11,6 +11,8 @@ class EmployeeSeeder extends Seeder {
      */
 
     public function run() {
+
       factory(Employee::class, 50) -> create();
+      // FACTORY IS USED TO GENERATE THE ROWS OF A TEBLE
     }
 }
